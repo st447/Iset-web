@@ -1,0 +1,272 @@
+/* =========================
+   Reset & Base Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7fb;
+  color: #333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* =========================
+   Containers
+========================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* =========================
+   Header
+========================= */
+header {
+  background: linear-gradient(90deg, #004d40, #00796b);
+  color: #fff;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+  display: block;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Top info bar */
+header .muted {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* =========================
+   Navigation Bar
+========================= */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover {
+  color: #80cbc4;
+  border-bottom: 2px solid #80cbc4;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* =========================
+   Cards
+========================= */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   About Section
+========================= */
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.about-grid address p {
+  margin-bottom: 0.5rem;
+  font-style: normal;
+}
+
+/* =========================
+   Products
+========================= */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.product:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product h3 {
+  color: #00796b;
+  margin-bottom: 0.5rem;
+}
+
+.product .meta {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+/* =========================
+   Employees
+========================= */
+.employees-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.employee {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.employee:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.employee .avatar {
+  background: #00796b;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-info h3 {
+  margin-bottom: 0.3rem;
+  color: #004d40;
+}
+
+.employee-info .label {
+  font-weight: bold;
+  margin-right: 0.3rem;
+}
+
+/* =========================
+   Utilities
+========================= */
+.muted {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background: #004d40;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image {
+    height: 160px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.active {
+    display: block;
+  }
+}

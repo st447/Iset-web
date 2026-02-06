@@ -1,0 +1,94 @@
+:root{
+    --bg:#f6f8fb;
+    --card:#ffffff;
+    --accent:#0b6cf0;
+    --muted:#6b7280;
+    --accent-2:#0b9a6f;
+    --max-width:1100px;
+    --radius:10px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background:var(--bg);
+    color:#111827;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.5;
+}
+
+.container{
+    width:95%;
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:2.5rem 0;
+}
+
+header{
+    background:linear-gradient(90deg,var(--accent),var(--accent-2));
+    color:white;
+    padding:1.25rem 0;
+}
+header .container{display:flex;align-items:center;justify-content:space-between}
+header h1{margin:0;font-size:1.5rem;letter-spacing:0.4px}
+
+/* Hero / company info */
+section{background:transparent;padding:2rem 0}
+section h2{margin:0 0 1rem 0;font-size:1.25rem;color:#0f172a}
+
+.card{
+    background:var(--card);
+    border-radius:var(--radius);
+    box-shadow:0 6px 20px rgba(13,24,47,0.06);
+    padding:1.25rem;
+    margin-bottom:1rem;
+}
+
+.about-grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.about-grid p{margin:.35rem 0;color:var(--muted)}
+
+/* Products */
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.product{
+    padding:1rem;border-radius:8px;background:linear-gradient(180deg,rgba(11,108,240,0.03),transparent);
+    border:1px solid rgba(15,23,42,0.04);
+}
+.product h3{margin:0 0 .5rem;font-size:1.05rem}
+.product p{margin:0 0 .5rem;color:var(--muted);font-size:.95rem}
+.product .meta{font-size:.9rem;color:var(--muted)}
+
+/* Employees */
+.employees-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.employee{display:flex;align-items:center;gap:0.75rem}
+.avatar{width:54px;height:54px;border-radius:50%;background:linear-gradient(90deg,var(--accent),#3b82f6);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+.employee-info h3{margin:0;font-size:1rem}
+.employee-info p{margin:0;color:var(--muted);font-size:.9rem}
+
+/* Footer */
+footer{padding:1.5rem 0;background:transparent;color:var(--muted);text-align:center}
+
+/* Utility */
+.muted{color:var(--muted)}
+.label{font-weight:600;color:#0f172a}
+
+/* Responsive */
+@media (max-width:900px){
+    .products-grid,.employees-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:600px){
+    header .container{flex-direction:column;gap:.75rem;align-items:flex-start}
+    .products-grid,.employees-grid{grid-template-columns:1fr}
+    .container{padding:1rem 0}
+}
+/*logo*/
+.logo { 
+    height: 60px; 
+    width: auto;
+    display: block; }
+
+/* Small interactive touches */
+.product:hover{transform:translateY(-4px);transition:all .18s ease}
+.product, .employee{transition:box-shadow .18s ease,transform .18s ease}
