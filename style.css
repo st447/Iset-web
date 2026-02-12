@@ -392,22 +392,32 @@ footer {
     display: block;
   }
 
-  /* HERO MOBILE - CORRECTIONS PRINCIPALES */
+  /* HERO MOBILE - NOUVELLE APPROCHE COMPLÈTE */
   .hero-split {
-    height: 100vh;
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0 60px;
+    overflow: visible;
   }
 
   /* Afficher le logo mobile */
   .hero-logo-mobile {
     display: block;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+    z-index: 10;
   }
 
-  /* Forcer la vidéo à être visible sur mobile - ABSOLUTE pas FIXED */
+  /* Vidéo - reste en arrière-plan de la section hero uniquement */
   .hero-video {
-    display: block !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -417,34 +427,43 @@ footer {
     z-index: 1;
   }
 
-  /* Overlay mobile - ABSOLUTE pas FIXED */
+  /* Overlay */
   .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    background: rgba(0,0,0,0.6);
     z-index: 2;
   }
 
-  /* Panels empilés verticalement */
+  /* Panels empilés verticalement avec position relative */
   .hero-panel {
     position: relative;
     width: 90%;
-    margin: 0 auto 2rem;
+    max-width: 500px;
+    margin: 0 auto 1.5rem;
     padding: 2rem 1.5rem;
     transform: none;
-    background: rgba(0, 77, 64, 0.9);
+    background: rgba(0, 77, 64, 0.92);
     border-radius: 12px;
     z-index: 4;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
 
   .hero-panel.left {
+    position: relative;
     left: auto;
+    top: auto;
+    bottom: auto;
   }
 
   .hero-panel.right {
+    position: relative;
     right: auto;
+    top: auto;
+    bottom: auto;
     transform: none;
   }
 
@@ -454,10 +473,19 @@ footer {
 
   .hero-panel h2 {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .hero-panel p {
     font-size: 0.95rem;
     max-width: 100%;
+    line-height: 1.6;
+  }
+
+  /* S'assurer que le contenu principal est bien visible après le hero */
+  main {
+    position: relative;
+    z-index: 5;
+    background: #f4f7fb;
   }
 }
