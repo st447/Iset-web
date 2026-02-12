@@ -43,6 +43,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .brand {
@@ -53,6 +54,7 @@ header {
 
 .logo {
   width: 60px;
+  max-width: 100%;
   height: auto;
   display: block;
 }
@@ -62,17 +64,7 @@ header h1 {
   font-weight: 600;
 }
 
-/* Top info bar */
-header .muted {
-  font-size: 0.9rem;
-  opacity: 0.9;
-  margin-top: 0.5rem;
-  text-align: center;
-}
-
-/* =========================
-   Navigation Bar
-========================= */
+/* Navigation Bar */
 nav ul {
   list-style: none;
   display: flex;
@@ -120,21 +112,7 @@ nav a:hover {
 }
 
 /* =========================
-   About Section
-========================= */
-.about-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-}
-
-.about-grid address p {
-  margin-bottom: 0.5rem;
-  font-style: normal;
-}
-
-/* =========================
-   Products
+   Products Grid
 ========================= */
 .products-grid {
   display: grid;
@@ -153,11 +131,6 @@ nav a:hover {
 
 .product:hover .product-image {
   transform: scale(1.05);
-}
-
-.product h3 {
-  color: #00796b;
-  margin-bottom: 0.5rem;
 }
 
 .product .meta {
@@ -206,19 +179,6 @@ nav a:hover {
   color: #004d40;
 }
 
-.employee-info .label {
-  font-weight: bold;
-  margin-right: 0.3rem;
-}
-
-/* =========================
-   Utilities
-========================= */
-.muted {
-  color: #777;
-  font-size: 0.85rem;
-}
-
 /* =========================
    Footer
 ========================= */
@@ -232,126 +192,7 @@ footer {
 }
 
 /* =========================
-   Responsive Design
-========================= */
-@media (max-width: 768px) {
-  .header-flex {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-top: 0.5rem;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .product-image {
-    height: 160px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    display: none;
-  }
-
-  nav.active {
-    display: block;
-  }
-}
-/* =========================
-   HERO SECTION
-========================= */
-.hero {
-  position: relative;
-  height: 90vh;
-  background: url("images/hero-bg.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-}
-
-.hero-content {
-  position: relative;
-  max-width: 800px;
-  padding: 1rem;
-  color: #fff;
-  animation: fadeUp 1s ease forwards;
-}
-
-.hero-logo {
-  height: 80px;
-  margin-bottom: 1rem;
-}
-
-.hero h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  opacity: 0.95;
-}
-
-.hero-btn {
-  display: inline-block;
-  background: #004d40;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s ease;
-}
-
-.hero-btn:hover {
-  background: #00695c;
-}
-
-/* Animation */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 1.6rem;
-  }
-
-  .hero-logo {
-    height: 60px;
-  }
-}
-/* =========================
-   SPLIT HERO WITH VIDEO
+   Hero Split Section (Video + Panels)
 ========================= */
 .hero-split {
   position: relative;
@@ -360,22 +201,23 @@ footer {
   color: #fff;
 }
 
-/* Video */
 .hero-video {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-/* Overlay */
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.55);
+  z-index: 2;
 }
 
-/* Panels */
 .hero-panel {
   position: absolute;
   top: 0;
@@ -385,15 +227,13 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
 }
 
-/* Left panel */
 .hero-panel.left {
   left: 0;
 }
 
-/* Right angled panel */
 .hero-panel.right {
   right: -10%;
   background: rgba(0, 77, 64, 0.85);
@@ -402,12 +242,6 @@ footer {
 
 .hero-panel.right * {
   transform: skewX(12deg);
-}
-
-/* Content */
-.hero-logo {
-  height: 80px;
-  margin-bottom: 1rem;
 }
 
 .hero-panel h2 {
@@ -420,23 +254,10 @@ footer {
   max-width: 420px;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .hero-panel {
-    width: 100%;
-    position: relative;
-    transform: none;
-  }
-
-  .hero-panel.right {
-    right: 0;
-    transform: none;
-  }
-
-  .hero-panel.right * {
-    transform: none;
-  }
-  .lang-toggle {
+/* =========================
+   Language Toggle
+========================= */
+.lang-toggle {
   display: flex;
   gap: 6px;
 }
@@ -456,4 +277,66 @@ footer {
   background: #ffffff;
   color: #004d40;
 }
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 768px) {
+  .header-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-panel,
+  .hero-panel.right {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    background: rgba(0,77,64,0.85);
+    
+  }
+
+  .hero-panel.right * {
+    transform: none;
+  }
+
+  .hero-panel h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-panel p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .logo {
+    width: 80px;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-video {
+    height: 50vh;
+  }
 }
