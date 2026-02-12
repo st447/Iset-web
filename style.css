@@ -436,4 +436,24 @@ footer {
   .hero-panel.right * {
     transform: none;
   }
+  .lang-toggle {
+  display: flex;
+  gap: 6px;
+}
+
+.lang-toggle button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transition: 0.3s;
+}
+
+.lang-toggle button:hover {
+  background: #ffffff;
+  color: #004d40;
+}
 }

@@ -4,11 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>ISET INTEGRATION SA</title>
-
   <meta name="description" content="Solar energy and electronic security solutions in Chad – CCTV, access control, fire alarms, solar systems.">
   <meta name="keywords" content="Solar Energy Chad, CCTV Chad, Security Systems N'Djamena, ISET Integration">
   <meta name="author" content="ISET Integration SA">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,49 +16,51 @@
   <div class="container header-flex">
 
     <div class="brand">
-      <img src="images/logo.png" alt="ISET Integration Logo" class="logo">
-      <h1>ISET INTEGRATION SA</h1>
+      <img src="images/logo.png" alt="ISET Integration SA logo" class="logo">
+      <h1 data-en="ISET INTEGRATION SA" data-fr="ISET INTEGRATION SA">ISET INTEGRATION SA</h1>
     </div>
 
     <nav>
       <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#employees">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-en="About" data-fr="À propos">About</a></li>
+        <li><a href="#products" data-en="Products" data-fr="Produits">Products</a></li>
+        <li><a href="#employees" data-en="Team" data-fr="Équipe">Team</a></li>
+        <li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
       </ul>
     </nav>
 
     <button id="menu-toggle" class="menu-toggle">☰</button>
+
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('fr')">FR</button>
+    </div>
   </div>
 </header>
 
-<!-- ================= HERO (VIDEO + ANGLED PANELS) ================= -->
+<!-- ================= HERO ================= -->
 <section class="hero-split">
-
   <video class="hero-video" autoplay muted loop playsinline>
-    <source src="videos/hero.mp4" type="video/mp4">
+    <source src="videos/hero2.mp4" type="video/mp4">
   </video>
-
   <div class="hero-overlay"></div>
 
   <div class="hero-panel left fade-on-scroll">
-    <img src="images/logo.png" class="hero-logo" alt="ISET Logo">
-    <h2>Smart Security Solutions</h2>
-    <p>
-      Advanced electronic security systems designed to protect
-      people, property, and assets.
+    <h2 data-en="Smart Security Solutions" data-fr="Solutions de Sécurité Intelligentes">Smart Security Solutions</h2>
+    <p data-en="Advanced electronic security systems designed to protect people, property, and assets."
+       data-fr="Systèmes de sécurité électronique avancés conçus pour protéger les personnes, les biens et les actifs.">
+      Advanced electronic security systems designed to protect people, property, and assets.
     </p>
   </div>
 
   <div class="hero-panel right fade-on-scroll">
-    <h2>Solar Energy & Innovation</h2>
-    <p>
-      Reliable solar solutions adapted to African environments
-      for sustainable energy independence.
+    <h2 data-en="Solar Energy & Innovation" data-fr="Énergie Solaire & Innovation">Solar Energy & Innovation</h2>
+    <p data-en="Reliable solar solutions adapted to African environments for sustainable energy independence."
+       data-fr="Solutions solaires fiables adaptées aux environnements africains pour une indépendance énergétique durable.">
+      Reliable solar solutions adapted to African environments for sustainable energy independence.
     </p>
   </div>
-
 </section>
 
 <!-- ================= MAIN ================= -->
@@ -69,109 +69,102 @@
 <!-- ABOUT -->
 <section class="container fade-on-scroll" id="about">
   <div class="card">
-    <h2>About ISET Integration SA</h2>
-
-    <p>
-      <strong>ISET INTEGRATION SA</strong> (Intelligent Security & Énergie du Tchad)
-      is a professional systems integration company based in
-      <strong>N’Djamena, Chad</strong>.
+    <h2 data-en="About ISET Integration SA" data-fr="À propos de ISET Integration SA">About ISET Integration SA</h2>
+    <p data-en="ISET INTEGRATION SA (Intelligent Security & Énergie du Tchad) is a professional systems integration company based in N’Djamena, Chad."
+       data-fr="ISET INTEGRATION SA (Intelligent Security & Énergie du Tchad) est une société professionnelle d'intégration de systèmes basée à N'Djamena, Tchad.">
+      ISET INTEGRATION SA (Intelligent Security & Énergie du Tchad) is a professional systems integration company based in N’Djamena, Chad.
     </p>
-
-    <p>
-      We specialize in <strong>solar energy solutions</strong> and
-      <strong>electronic security systems</strong> including CCTV,
-      access control, fire detection, alarms, and GPS tracking.
+    <p data-en="We specialize in solar energy solutions and electronic security systems including CCTV, access control, fire detection, alarms, and GPS tracking."
+       data-fr="Nous sommes spécialisés dans les solutions d'énergie solaire et les systèmes de sécurité électronique incluant CCTV, contrôle d'accès, détection incendie, alarmes et suivi GPS.">
+      We specialize in solar energy solutions and electronic security systems including CCTV, access control, fire detection, alarms, and GPS tracking.
     </p>
-
-    <p>
-      Our mission is to deliver high-quality, reliable, and
-      innovative solutions backed by experienced engineers
-      and certified technicians.
+    <p data-en="Our mission is to deliver high-quality, reliable, and innovative solutions backed by experienced engineers and certified technicians."
+       data-fr="Notre mission est de fournir des solutions de haute qualité, fiables et innovantes, soutenues par des ingénieurs expérimentés et des techniciens certifiés.">
+      Our mission is to deliver high-quality, reliable, and innovative solutions backed by experienced engineers and certified technicians.
     </p>
   </div>
 </section>
 
 <!-- PRODUCTS -->
 <section class="container" id="products">
-  <h2>Our Products</h2>
+  <h2 data-en="Our Products" data-fr="Nos Produits">Our Products</h2>
 
-  <h3 class="category-title">Solar Energy Solutions</h3>
+  <h3 class="category-title" data-en="Solar Energy Solutions" data-fr="Solutions d'Énergie Solaire">Solar Energy Solutions</h3>
   <div class="products-grid">
     <div class="product card">
       <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" class="product-image">
-      <h4>Solar Panel 550W</h4>
-      <p>High-efficiency photovoltaic panel.</p>
-      <p class="meta"><strong>Price:</strong> 250,000 XAF</p>
+      <h4 data-en="Solar Panel 550W" data-fr="Panneau Solaire 550W">Solar Panel 550W</h4>
+      <p data-en="High-efficiency photovoltaic panel." data-fr="Panneau photovoltaïque haute efficacité.">High-efficiency photovoltaic panel.</p>
+      <p class="meta" data-en="Price: 250,000 XAF" data-fr="Prix : 250 000 XAF"><strong>Price:</strong> 250,000 XAF</p>
     </div>
-
     <div class="product card">
       <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" class="product-image">
-      <h4>Hybrid Inverter 5kVA</h4>
-      <p>Off-grid and on-grid inverter.</p>
-      <p class="meta"><strong>Price:</strong> 450,000 XAF</p>
+      <h4 data-en="Hybrid Inverter 5kVA" data-fr="Onduleur Hybride 5kVA">Hybrid Inverter 5kVA</h4>
+      <p data-en="Off-grid and on-grid inverter." data-fr="Onduleur hors-réseau et sur réseau.">Off-grid and on-grid inverter.</p>
+      <p class="meta" data-en="Price: 450,000 XAF" data-fr="Prix : 450 000 XAF"><strong>Price:</strong> 450,000 XAF</p>
     </div>
-
     <div class="product card">
       <img src="https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b" class="product-image">
-      <h4>Solar Battery 200Ah</h4>
-      <p>Reliable energy storage solution.</p>
-      <p class="meta"><strong>Price:</strong> 150,000 XAF</p>
+      <h4 data-en="Solar Battery 200Ah" data-fr="Batterie Solaire 200Ah">Solar Battery 200Ah</h4>
+      <p data-en="Reliable energy storage solution." data-fr="Solution de stockage d'énergie fiable.">Reliable energy storage solution.</p>
+      <p class="meta" data-en="Price: 150,000 XAF" data-fr="Prix : 150 000 XAF"><strong>Price:</strong> 150,000 XAF</p>
     </div>
   </div>
 
-  <h3 class="category-title">Electronic Security Systems</h3>
+  <h3 class="category-title" data-en="Electronic Security Systems" data-fr="Systèmes de Sécurité Électroniques">Electronic Security Systems</h3>
   <div class="products-grid">
     <div class="product card">
       <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" class="product-image">
-      <h4>CCTV Camera</h4>
-      <p>Remote HD surveillance system.</p>
-      <p class="meta"><strong>Price:</strong> 85,000 XAF</p>
+      <h4 data-en="CCTV Camera" data-fr="Caméra CCTV">CCTV Camera</h4>
+      <p data-en="Remote HD surveillance system." data-fr="Système de surveillance HD à distance.">Remote HD surveillance system.</p>
+      <p class="meta" data-en="Price: 85,000 XAF" data-fr="Prix : 85 000 XAF"><strong>Price:</strong> 85,000 XAF</p>
     </div>
-
     <div class="product card">
       <img src="https://images.unsplash.com/photo-1580910051074-7f9d41c3d7ef" class="product-image">
-      <h4>Access Control</h4>
-      <p>RFID & biometric access system.</p>
-      <p class="meta"><strong>Price:</strong> 120,000 XAF</p>
+      <h4 data-en="Access Control" data-fr="Contrôle d'Accès">Access Control</h4>
+      <p data-en="RFID & biometric access system." data-fr="Système d'accès RFID et biométrique.">RFID & biometric access system.</p>
+      <p class="meta" data-en="Price: 120,000 XAF" data-fr="Prix : 120 000 XAF"><strong>Price:</strong> 120,000 XAF</p>
     </div>
-
     <div class="product card">
       <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" class="product-image">
-      <h4>Fire Alarm System</h4>
-      <p>Early fire detection & alerting.</p>
-      <p class="meta"><strong>Price:</strong> 95,000 XAF</p>
+      <h4 data-en="Fire Alarm System" data-fr="Système d'Alarme Incendie">Fire Alarm System</h4>
+      <p data-en="Early fire detection & alerting." data-fr="Détection précoce et alerte incendie.">Early fire detection & alerting.</p>
+      <p class="meta" data-en="Price: 95,000 XAF" data-fr="Prix : 95 000 XAF"><strong>Price:</strong> 95,000 XAF</p>
     </div>
   </div>
 </section>
 
-</section> 
-<!-- Employees Section --> 
- <section class="container" id="employees"> 
-    <h2>Our Team</h2> <div class="employees-grid"> 
-        <div class="card employee"> 
-            <div class="avatar">I
-
-            </div> 
-            <div class="employee-info">
-                 <h3>Technical Engineering Team</h3> <p><strong>Role:</strong> Solar & Electronic Security Engineers</p>
-                  <p class="muted"> <a href="mailto:isetintegrationsa@gmail.com">isetintegrationsa@gmail.com</a> </p>
-                   <p class="muted"> <a href="tel:+23568376110">+235 68 37 61 10</a> </p> 
-                </div> 
-            </div> 
-            <div class="card employee"> <div class="avatar">T</div> <div class="employee-info"> <h3>Installation & Support Team</h3> <p><strong>Role:</strong> Certified Technicians</p> 
-                <p class="muted"> <a href="mailto:support@isetintegration.com">support@isetintegration.com</a> </p> 
-                <p class="muted"> <a href="tel:+23568376110">+235 68 37 61 10</a> </p> 
-            </div> 
-        </div> 
+<!-- Employees Section -->
+<section class="container" id="employees">
+  <h2 data-en="Our Team" data-fr="Notre Équipe">Our Team</h2>
+  <div class="employees-grid">
+    <div class="card employee">
+      <div class="avatar">I</div>
+      <div class="employee-info">
+        <h3 data-en="Technical Engineering Team" data-fr="Équipe Technique d'Ingénierie">Technical Engineering Team</h3>
+        <p data-en="Role: Solar & Electronic Security Engineers" data-fr="Rôle : Ingénieurs Solaire & Sécurité Électronique"><strong>Role:</strong> Solar & Electronic Security Engineers</p>
+        <p class="muted"><a href="mailto:isetintegrationsa@gmail.com">isetintegrationsa@gmail.com</a></p>
+        <p class="muted"><a href="tel:+23568376110">+235 68 37 61 10</a></p>
+      </div>
     </div>
- </section>
+    <div class="card employee">
+      <div class="avatar">T</div>
+      <div class="employee-info">
+        <h3 data-en="Installation & Support Team" data-fr="Équipe Installation & Support">Installation & Support Team</h3>
+        <p data-en="Role: Certified Technicians" data-fr="Rôle : Techniciens Certifiés"><strong>Role:</strong> Certified Technicians</p>
+        <p class="muted"><a href="mailto:support@isetintegration.com">support@isetintegration.com</a></p>
+        <p class="muted"><a href="tel:+23568376110">+235 68 37 61 10</a></p>
+      </div>
+    </div>
+  </div>
+</section>
 
 </main>
 
 <!-- FOOTER -->
 <footer id="contact">
   <div class="container">
-    <p>© 2026 ISET INTEGRATION SA – N’Djamena, Chad</p>
+    <p data-en="© 2026 ISET INTEGRATION SA – N’Djamena, Chad" data-fr="© 2026 ISET INTEGRATION SA – N’Djamena, Tchad">© 2026 ISET INTEGRATION SA – N’Djamena, Chad</p>
   </div>
 </footer>
 
@@ -188,6 +181,24 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 document.querySelectorAll('.fade-on-scroll').forEach(el => observer.observe(el));
+
+// Multilingual Logic
+function setLanguage(lang) {
+  localStorage.setItem("language", lang);
+  applyLanguage(lang);
+}
+
+function applyLanguage(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-en]").forEach(el => {
+    el.textContent = el.getAttribute("data-" + lang);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("language") || "en";
+  applyLanguage(savedLang);
+});
 </script>
 
 </body>
