@@ -405,25 +405,25 @@ footer {
     display: block;
   }
 
-  /* Forcer la vidéo à être visible sur mobile */
+  /* Forcer la vidéo à être visible sur mobile - ABSOLUTE pas FIXED */
   .hero-video {
     display: block !important;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     z-index: 1;
   }
 
-  /* Overlay mobile */
+  /* Overlay mobile - ABSOLUTE pas FIXED */
   .hero-overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: 2;
   }
 
