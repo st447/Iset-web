@@ -1,23 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Contact | ISET</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact – ISET INTEGRATION SA</title>
+  <meta name="description" content="Contact ISET Integration SA – Solar energy and electronic security solutions in Chad.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<header class="container">
-    <a href="index.html">← Back to Home</a>
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="container header-flex">
+    <div class="brand">
+      <img src="images/logo.png" alt="ISET Integration SA logo" class="logo">
+      <h1 data-en="ISET INTEGRATION SA" data-fr="ISET INTEGRATION SA">ISET INTEGRATION SA</h1>
+    </div>
+
+    <nav id="mainNav">
+      <ul class="nav-links">
+        <li><a href="index.html#about"       data-en="About"    data-fr="À propos">About</a></li>
+        <li><a href="index.html#services"    data-en="Services" data-fr="Services">Services</a></li>
+        <li><a href="index.html#our-products" data-en="Products" data-fr="Produits">Products</a></li>
+        <li><a href="index.html#projects"    data-en="Projects" data-fr="Projets">Projects</a></li>
+        <li><a href="index.html#faq"         data-en="FAQ"      data-fr="FAQ">FAQ</a></li>
+        <li><a href="contact.html" class="nav-active" data-en="Contact" data-fr="Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="lang-toggle">
+      <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+      <button onclick="setLanguage('fr')" class="lang-btn">FR</button>
+    </div>
+  </div>
 </header>
 
-<main class="container">
-    <h2>Contact Us</h2>
+<!-- ================= CONTACT HERO ================= -->
+<section class="contact-hero">
+  <div class="contact-hero-overlay"></div>
+  <div class="contact-hero-content">
+    <i class="fas fa-envelope-open-text"></i>
+    <h2 data-en="Get in Touch" data-fr="Contactez-Nous">Get in Touch</h2>
+    <p data-en="We're here to help. Reach out to us for any inquiries or project discussions."
+       data-fr="Nous sommes là pour vous aider. Contactez-nous pour toute demande ou discussion de projet.">
+      We're here to help. Reach out to us for any inquiries or project discussions.
+    </p>
+  </div>
+</section>
 
-    <p><strong>Address:</strong> N’Djamena – Chad</p>
-    <p><strong>Email:</strong> isetintegrationsa@gmail.com</p>
-    <p><strong>Phone:</strong> +235 68 37 61 10</p>
+<!-- ================= MAIN ================= -->
+<main>
+
+<section class="container contact-page fade-on-scroll">
+
+  <!-- Info Cards Row -->
+  <div class="contact-cards">
+    <div class="contact-card">
+      <i class="fas fa-map-marker-alt"></i>
+      <h4 data-en="Address" data-fr="Adresse">Address</h4>
+      <p>N'Djamena, Chad</p>
+    </div>
+    <div class="contact-card">
+      <i class="fas fa-phone"></i>
+      <h4 data-en="Phone" data-fr="Téléphone">Phone</h4>
+      <p><a href="tel:+23568376110">+235 68 37 61 10</a></p>
+    </div>
+    <div class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <h4>Email</h4>
+      <p><a href="mailto:isetintegrationsa@gmail.com">isetintegrationsa@gmail.com</a></p>
+    </div>
+    <div class="contact-card">
+      <i class="fas fa-clock"></i>
+      <h4 data-en="Business Hours" data-fr="Horaires">Business Hours</h4>
+      <p data-en="Mon – Sat: 8:00 AM – 6:00 PM" data-fr="Lun – Sam : 8h00 – 18h00">Mon – Sat: 8:00 AM – 6:00 PM</p>
+    </div>
+  </div>
+
+  <!-- Form + Map -->
+  <div class="contact-wrapper">
+
+    <!-- FORM -->
+    <form class="contact-form" id="contactForm">
+      <h3 data-en="Send Us a Message" data-fr="Envoyez-Nous un Message">Send Us a Message</h3>
+
+      <div class="form-group">
+        <input type="text" id="name" placeholder=" " required>
+        <label for="name" data-en="Full Name *" data-fr="Nom Complet *">Full Name *</label>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder=" " required>
+        <label for="email">Email *</label>
+      </div>
+      <div class="form-group">
+        <input type="tel" id="phone" placeholder=" ">
+        <label for="phone" data-en="Phone Number" data-fr="Numéro de Téléphone">Phone Number</label>
+      </div>
+      <div class="form-group">
+        <select id="service" required>
+          <option value=""       data-en="Select a service *"  data-fr="Sélectionner un service *">Select a service *</option>
+          <option value="solar"  data-en="Solar Energy"        data-fr="Énergie Solaire">Solar Energy</option>
+          <option value="cctv"   data-en="CCTV Systems"        data-fr="Systèmes CCTV">CCTV Systems</option>
+          <option value="access" data-en="Access Control"      data-fr="Contrôle d'Accès">Access Control</option>
+          <option value="fire"   data-en="Fire Detection"      data-fr="Détection Incendie">Fire Detection</option>
+          <option value="alarm"  data-en="Alarm Systems"       data-fr="Systèmes d'Alarme">Alarm Systems</option>
+          <option value="gps"    data-en="GPS Tracking"        data-fr="Suivi GPS">GPS Tracking</option>
+          <option value="audit"  data-en="Security Audit"      data-fr="Audit Sécurité">Security Audit</option>
+          <option value="other"  data-en="Other"               data-fr="Autre">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <textarea id="message" rows="5" placeholder=" " required></textarea>
+        <label for="message" data-en="Your Message *" data-fr="Votre Message *">Your Message *</label>
+      </div>
+
+      <button type="submit" class="submit-btn" data-en="Send Message" data-fr="Envoyer le Message">Send Message</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+
+    <!-- SOCIAL + WHATSAPP -->
+    <div class="contact-side">
+      <h3 data-en="Connect With Us" data-fr="Rejoignez-Nous">Connect With Us</h3>
+
+      <a href="https://wa.me/23568376110" class="whatsapp-big" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <div>
+          <strong>WhatsApp</strong>
+          <span data-en="Chat with us directly" data-fr="Discutez avec nous directement">Chat with us directly</span>
+        </div>
+      </a>
+
+      <a href="tel:+23568376110" class="phone-big">
+        <i class="fas fa-phone"></i>
+        <div>
+          <strong data-en="Call Us" data-fr="Appelez-Nous">Call Us</strong>
+          <span>+235 68 37 61 10</span>
+        </div>
+      </a>
+
+      <a href="mailto:isetintegrationsa@gmail.com" class="email-big">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <strong>Email</strong>
+          <span>isetintegrationsa@gmail.com</span>
+        </div>
+      </a>
+
+      <div class="back-home">
+        <a href="index.html" class="cta-btn">
+          <i class="fas fa-arrow-left"></i>
+          <span data-en="Back to Home" data-fr="Retour à l'Accueil">Back to Home</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 </main>
+
+<!-- Floating Buttons -->
+<div class="floating-btns">
+  <a href="https://wa.me/23568376110" class="float-btn whatsapp" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="tel:+23568376110" class="float-btn phone" aria-label="Call Us">
+    <i class="fas fa-phone"></i>
+  </a>
+</div>
+
+<button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <p data-en="© 2026 ISET INTEGRATION SA – N'Djamena, Chad" data-fr="© 2026 ISET INTEGRATION SA – N'Djamena, Tchad">© 2026 ISET INTEGRATION SA – N'Djamena, Chad</p>
+  </div>
+</footer>
+
+<script>
+// Menu
+const menuToggle = document.getElementById('menu-toggle');
+const mainNav    = document.getElementById('mainNav');
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  mainNav.classList.toggle('active');
+});
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuToggle.classList.remove('active');
+    mainNav.classList.remove('active');
+  });
+});
+
+// Fade on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-on-scroll').forEach(el => observer.observe(el));
+
+// Contact Form
+document.getElementById('contactForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const status    = document.getElementById('formStatus');
+  const submitBtn = e.target.querySelector('.submit-btn');
+  submitBtn.disabled    = true;
+  submitBtn.textContent = 'Sending…';
+  setTimeout(() => {
+    status.textContent = '✅ Message sent! We will contact you soon.';
+    status.style.color = '#00a854';
+    submitBtn.disabled    = false;
+    submitBtn.textContent = 'Send Message';
+    e.target.reset();
+    setTimeout(() => { status.textContent = ''; }, 5000);
+  }, 1500);
+});
+
+// Scroll to Top
+const scrollTopBtn = document.getElementById('scrollTop');
+window.addEventListener('scroll', () => {
+  scrollTopBtn.classList.toggle('visible', window.pageYOffset > 300);
+});
+scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// Multilingual
+function setLanguage(lang) {
+  localStorage.setItem('language', lang);
+  applyLanguage(lang);
+}
+function applyLanguage(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const text = el.getAttribute('data-' + lang);
+    if (!text) return;
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') el.placeholder = text;
+    else el.textContent = text;
+  });
+}
+document.addEventListener('DOMContentLoaded', () => {
+  applyLanguage(localStorage.getItem('language') || 'en');
+});
+</script>
 
 </body>
 </html>

@@ -8,7 +8,6 @@
   <meta name="keywords" content="Solar Energy Chad, CCTV Chad, Security Systems N'Djamena, ISET Integration">
   <meta name="author" content="ISET Integration SA">
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -16,7 +15,6 @@
 <!-- ================= HEADER ================= -->
 <header>
   <div class="container header-flex">
-
     <div class="brand">
       <img src="images/logo.png" alt="ISET Integration SA logo" class="logo">
       <h1 data-en="ISET INTEGRATION SA" data-fr="ISET INTEGRATION SA">ISET INTEGRATION SA</h1>
@@ -24,22 +22,20 @@
 
     <nav id="mainNav">
       <ul class="nav-links">
-        <li><a href="#about" data-en="About" data-fr="À propos">About</a></li>
+        <li><a href="#about"    data-en="About"    data-fr="À propos">About</a></li>
         <li><a href="#services" data-en="Services" data-fr="Services">Services</a></li>
-        <li><a href="#products" data-en="Products" data-fr="Produits">Products</a></li>
+        <li><a href="#products"     data-en="Services"  data-fr="Services">Services</a></li>
+        <li><a href="#our-products" data-en="Products"  data-fr="Produits">Products</a></li>
         <li><a href="#projects" data-en="Projects" data-fr="Projets">Projects</a></li>
-        <li><a href="#faq" data-en="FAQ" data-fr="FAQ">FAQ</a></li>
-        <li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
+        <li><a href="#faq"      data-en="FAQ"      data-fr="FAQ">FAQ</a></li>
+        <li><a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a></li>
       </ul>
     </nav>
 
     <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
 
-    <!-- Language Toggle -->
     <div class="lang-toggle">
       <button onclick="setLanguage('en')" class="lang-btn">EN</button>
       <button onclick="setLanguage('fr')" class="lang-btn">FR</button>
@@ -49,44 +45,31 @@
 
 <!-- ================= HERO ================= -->
 <section class="hero-split">
-
-  <!-- Background Video -->
   <video class="hero-video" autoplay muted loop playsinline>
     <source src="videos/hero2.mp4" type="video/mp4">
   </video>
-
-  <!-- Overlay for darkening -->
   <div class="hero-overlay"></div>
-
-  <!-- Mobile Logo (always on top) -->
   <img src="images/logo.png" alt="ISET Integration SA logo" class="hero-logo-mobile">
 
-  <!-- Left Panel -->
   <div class="hero-panel left fade-on-scroll">
     <i class="fas fa-shield-alt hero-icon"></i>
-    <h2 data-en="Smart Security Solutions" data-fr="Solutions de Sécurité Intelligentes">
-      Smart Security Solutions
-    </h2>
+    <h2 data-en="Smart Security Solutions" data-fr="Solutions de Sécurité Intelligentes">Smart Security Solutions</h2>
     <p data-en="Advanced electronic security systems designed to protect people, property, and assets."
        data-fr="Systèmes de sécurité électronique avancés conçus pour protéger les personnes, les biens et les actifs.">
       Advanced electronic security systems designed to protect people, property, and assets.
     </p>
-    <a href="#contact" class="cta-btn" data-en="Get a Quote" data-fr="Demander un devis">Get a Quote</a>
+    <a href="#contact" class="cta-btn" data-en="Contact Us" data-fr="Nous Contacter">Contact Us</a>
   </div>
 
-  <!-- Right Panel -->
   <div class="hero-panel right fade-on-scroll">
     <i class="fas fa-solar-panel hero-icon"></i>
-    <h2 data-en="Solar Energy & Innovation" data-fr="Énergie Solaire & Innovation">
-      Solar Energy & Innovation
-    </h2>
+    <h2 data-en="Solar Energy & Innovation" data-fr="Énergie Solaire & Innovation">Solar Energy & Innovation</h2>
     <p data-en="Reliable solar solutions adapted to African environments for sustainable energy independence."
        data-fr="Solutions solaires fiables adaptées aux environnements africains pour une indépendance énergétique durable.">
       Reliable solar solutions adapted to African environments for sustainable energy independence.
     </p>
-    <a href="#products" class="cta-btn" data-en="View Products" data-fr="Voir les produits">View Products</a>
+    <a href="#products" class="cta-btn" data-en="Our Solutions" data-fr="Nos Solutions">Our Solutions</a>
   </div>
-
 </section>
 
 <!-- ================= MAIN ================= -->
@@ -134,9 +117,9 @@
     <div class="service-card">
       <i class="fas fa-shield-alt"></i>
       <h3 data-en="Quality Guarantee" data-fr="Garantie Qualité">Quality Guarantee</h3>
-      <p data-en="All our products come with warranty and quality assurance."
-         data-fr="Tous nos produits sont accompagnés d'une garantie et d'une assurance qualité.">
-        All our products come with warranty and quality assurance.
+      <p data-en="All our solutions come with warranty and quality assurance."
+         data-fr="Toutes nos solutions sont accompagnées d'une garantie et d'une assurance qualité.">
+        All our solutions come with warranty and quality assurance.
       </p>
     </div>
     <div class="service-card">
@@ -150,77 +133,256 @@
   </div>
 </section>
 
-<!-- PRODUCTS -->
+<!-- SOLUTIONS – 10 services -->
 <section class="container" id="products">
+  <h2 class="section-title" data-en="Our Services" data-fr="Nos Services">Our Services</h2>
+
+  <!-- ① Video Surveillance -->
+  <div class="service-block fade-on-scroll">
+    <div class="service-block-header">
+      <i class="fas fa-video"></i>
+      <h3 data-en="Video Surveillance Systems" data-fr="Systèmes de Vidéosurveillance">Video Surveillance Systems</h3>
+    </div>
+    <div class="service-tags">
+      <span data-en="IP & HD Surveillance"        data-fr="Surveillance IP & HD">IP & HD Surveillance</span>
+      <span data-en="NVR / DVR Systems"            data-fr="Systèmes NVR / DVR">NVR / DVR Systems</span>
+      <span data-en="Mobile Surveillance"          data-fr="Surveillance Mobile">Mobile Surveillance</span>
+      <span data-en="Autonomous Cameras"           data-fr="Caméras Autonomes">Autonomous Cameras</span>
+      <span data-en="Vehicle Cameras"              data-fr="Caméras Véhicules">Vehicle Cameras</span>
+      <span data-en="Backup Systems"               data-fr="Systèmes de Sauvegarde">Backup Systems</span>
+      <span data-en="Installation & Maintenance"   data-fr="Installation & Maintenance">Installation & Maintenance</span>
+      <span data-en="Compliance Consulting"        data-fr="Conseil en Conformité">Compliance Consulting</span>
+    </div>
+  </div>
+
+  <!-- ② Access Control -->
+  <div class="service-block fade-on-scroll">
+    <div class="service-block-header">
+      <i class="fas fa-fingerprint"></i>
+      <h3 data-en="Access Control & Biometrics" data-fr="Contrôle d'Accès & Biométrie">Access Control & Biometrics</h3>
+    </div>
+    <div class="service-tags">
+      <span data-en="Door & Barrier Access"             data-fr="Accès Portes & Barrières">Door & Barrier Access</span>
+      <span data-en="Time Attendance Systems"           data-fr="Gestion du Temps & Présences">Time Attendance Systems</span>
+      <span data-en="Parking Access Management"         data-fr="Gestion Parking">Parking Access Management</span>
+      <span data-en="Turnstiles"                        data-fr="Tourniquets">Turnstiles</span>
+      <span data-en="High-Security Doors & SAS"         data-fr="Portes Haute Sécurité & SAS">High-Security Doors & SAS</span>
+      <span data-en="Architectural Revolving Doors"     data-fr="Portes Tambour Architecturales">Architectural Revolving Doors</span>
+      <span data-en="Integrated Security Solutions"     data-fr="Solutions de Sécurité Intégrées">Integrated Security Solutions</span>
+    </div>
+  </div>
+
+  <!-- ③ Fire Safety -->
+  <div class="service-block fade-on-scroll">
+    <div class="service-block-header">
+      <i class="fas fa-fire-extinguisher"></i>
+      <h3 data-en="Fire Safety Systems" data-fr="Systèmes de Sécurité Incendie">Fire Safety Systems</h3>
+    </div>
+    <div class="service-tags">
+      <span data-en="Fire Detection Systems"            data-fr="Systèmes de Détection Incendie">Fire Detection Systems</span>
+      <span data-en="Fire Alarm Systems"                data-fr="Systèmes d'Alarme Incendie">Fire Alarm Systems</span>
+      <span data-en="Emergency Lighting"                data-fr="Éclairage de Secours">Emergency Lighting</span>
+      <span data-en="Fire Extinguishers"                data-fr="Extincteurs">Fire Extinguishers</span>
+      <span data-en="Safety Signage"                    data-fr="Signalisation de Sécurité">Safety Signage</span>
+      <span data-en="Fire Hose Reels (RIA)"             data-fr="Robinets d'Incendie Armés (RIA)">Fire Hose Reels (RIA)</span>
+      <span data-en="Automatic Suppression Systems"     data-fr="Systèmes d'Extinction Automatique">Automatic Suppression Systems</span>
+      <span data-en="Design & Maintenance"              data-fr="Conception & Maintenance">Design & Maintenance</span>
+    </div>
+  </div>
+
+  <!-- ④ Alarm & Intrusion -->
+  <div class="service-block fade-on-scroll">
+    <div class="service-block-header">
+      <i class="fas fa-bell"></i>
+      <h3 data-en="Alarm & Intrusion Systems" data-fr="Systèmes d'Alarme & Anti-Intrusion">Alarm & Intrusion Systems</h3>
+    </div>
+    <div class="service-tags">
+      <span data-en="Intrusion Alarms"                  data-fr="Alarmes Anti-Intrusion">Intrusion Alarms</span>
+      <span data-en="Anti-Robbery Alarms"               data-fr="Alarmes Anti-Hold-up">Anti-Robbery Alarms</span>
+      <span data-en="Nurse Call Systems"                data-fr="Systèmes d'Appel Infirmière">Nurse Call Systems</span>
+      <span data-en="Perimeter Alarms"                  data-fr="Alarmes Périmètriques">Perimeter Alarms</span>
+      <span data-en="Remote Activation"                 data-fr="Télé-activation">Remote Activation</span>
+      <span data-en="Visual Verification"               data-fr="Vérification Visuelle">Visual Verification</span>
+      <span data-en="SMS & Email Alerts"                data-fr="Alertes SMS & Email">SMS & Email Alerts</span>
+      <span data-en="Smart Home Integration"            data-fr="Intégration Domotique">Smart Home Integration</span>
+    </div>
+  </div>
+
+  <!-- ⑤ ITS -->
+  <div class="service-block fade-on-scroll">
+    <div class="service-block-header">
+      <i class="fas fa-traffic-light"></i>
+      <h3 data-en="Intelligent Transport Systems (ITS)" data-fr="Systèmes de Transport Intelligents (ITS)">Intelligent Transport Systems (ITS)</h3>
+    </div>
+    <div class="service-tags">
+      <span data-en="Parking Management"                data-fr="Gestion de Stationnement">Parking Management</span>
+      <span data-en="Electronic Signage Panels"         data-fr="Panneaux de Signalisation Électronique">Electronic Signage Panels</span>
+      <span data-en="Electronic Toll Solutions"         data-fr="Solutions de Péage Électronique">Electronic Toll Solutions</span>
+      <span data-en="License Plate Recognition (LPR)"  data-fr="Reconnaissance de Plaques (LPR)">License Plate Recognition (LPR)</span>
+      <span data-en="Traffic Monitoring"                data-fr="Supervision du Trafic">Traffic Monitoring</span>
+      <span data-en="Temporary Installations"           data-fr="Installations Temporaires">Temporary Installations</span>
+    </div>
+  </div>
+
+  <!-- ⑥ GPS Tracking -->
+  <div class="service-block fade-on-scroll">
+    <div class="service-block-header">
+      <i class="fas fa-map-marked-alt"></i>
+      <h3 data-en="Tracking & Vehicle Surveillance" data-fr="Suivi & Surveillance Véhicules">Tracking & Vehicle Surveillance</h3>
+    </div>
+    <div class="service-tags">
+      <span data-en="Real-Time GPS Tracking"            data-fr="Suivi GPS en Temps Réel">Real-Time GPS Tracking</span>
+      <span data-en="Fleet Management"                  data-fr="Gestion de Flotte">Fleet Management</span>
+      <span data-en="Driving Behavior Analysis"         data-fr="Analyse du Comportement de Conduite">Driving Behavior Analysis</span>
+      <span data-en="Anti-Theft Solutions"              data-fr="Solutions Anti-Vol">Anti-Theft Solutions</span>
+      <span data-en="Route Optimization"                data-fr="Optimisation des Itinéraires">Route Optimization</span>
+      <span data-en="Fuel Consumption Monitoring"       data-fr="Suivi de Consommation de Carburant">Fuel Consumption Monitoring</span>
+      <span data-en="Reports & Analytics"               data-fr="Rapports & Analyses">Reports & Analytics</span>
+    </div>
+  </div>
+
+  <!-- ⑦ Solar Energy -->
+  <div class="service-block fade-on-scroll">
+    <div class="service-block-header">
+      <i class="fas fa-solar-panel"></i>
+      <h3 data-en="Solar Energy Solutions" data-fr="Solutions d'Énergie Solaire">Solar Energy Solutions</h3>
+    </div>
+    <div class="service-tags">
+      <span data-en="Solar System Design"               data-fr="Conception de Systèmes Solaires">Solar System Design</span>
+      <span data-en="Photovoltaic Installation"         data-fr="Installation Photovoltaïque">Photovoltaic Installation</span>
+      <span data-en="Off-Grid Systems"                  data-fr="Systèmes Hors-Réseau">Off-Grid Systems</span>
+      <span data-en="Energy Autonomy Solutions"         data-fr="Solutions d'Autonomie Énergétique">Energy Autonomy Solutions</span>
+      <span data-en="Agrivoltaics"                      data-fr="Agrivoltaïsme">Agrivoltaics</span>
+      <span data-en="Floating Solar"                    data-fr="Solaire Flottant">Floating Solar</span>
+      <span data-en="Ground Solar"                      data-fr="Solaire au Sol">Ground Solar</span>
+      <span data-en="Solar Structures"                  data-fr="Structures Solaires">Solar Structures</span>
+    </div>
+  </div>
+
+  <!-- ⑧ Cabling & Networking -->
+  <div class="service-block fade-on-scroll">
+    <div class="service-block-header">
+      <i class="fas fa-network-wired"></i>
+      <h3 data-en="Smart Cabling & Networking" data-fr="Câblage Intelligent & Réseaux">Smart Cabling & Networking</h3>
+    </div>
+    <div class="service-tags">
+      <span data-en="VDI Cabling (Voice Data Image)"    data-fr="Câblage VDI (Voix Données Image)">VDI Cabling (Voice Data Image)</span>
+      <span data-en="Network Infrastructure"            data-fr="Infrastructure Réseau">Network Infrastructure</span>
+      <span data-en="CCTV Cabling"                      data-fr="Câblage CCTV">CCTV Cabling</span>
+      <span data-en="RJ45 / Ethernet Installations"     data-fr="Installations RJ45 / Ethernet">RJ45 / Ethernet Installations</span>
+      <span data-en="PoE Systems"                       data-fr="Systèmes PoE">PoE Systems</span>
+      <span data-en="Fiber Integration"                 data-fr="Intégration Fibre Optique">Fiber Integration</span>
+    </div>
+  </div>
+
+  <!-- ⑨ Security Audit -->
+  <div class="service-block fade-on-scroll">
+    <div class="service-block-header">
+      <i class="fas fa-search"></i>
+      <h3 data-en="Security Audit & Consulting" data-fr="Audit Sécurité & Conseil">Security Audit & Consulting</h3>
+    </div>
+    <div class="service-tags">
+      <span data-en="Security System Audit"             data-fr="Audit des Systèmes de Sécurité">Security System Audit</span>
+      <span data-en="Risk Analysis"                     data-fr="Analyse des Risques">Risk Analysis</span>
+      <span data-en="Technology Assessment"             data-fr="Évaluation Technologique">Technology Assessment</span>
+      <span data-en="Cost Optimization"                 data-fr="Optimisation des Coûts">Cost Optimization</span>
+      <span data-en="Recommendations & Design"          data-fr="Recommandations & Conception">Recommendations & Design</span>
+    </div>
+  </div>
+
+  <!-- ⑩ Training -->
+  <div class="service-block fade-on-scroll">
+    <div class="service-block-header">
+      <i class="fas fa-graduation-cap"></i>
+      <h3 data-en="Certified Training Programs" data-fr="Programmes de Formation Certifiants">Certified Training Programs</h3>
+    </div>
+    <p class="service-block-subtitle" data-en="ISET Training Center" data-fr="Centre de Formation ISET">ISET Training Center</p>
+    <div class="service-tags">
+      <span data-en="Security Systems Technician"       data-fr="Technicien Systèmes de Sécurité">Security Systems Technician</span>
+      <span data-en="Renewable Energy Technician"       data-fr="Technicien Énergie Renouvelable">Renewable Energy Technician</span>
+      <span data-en="Installation & Maintenance"        data-fr="Installation & Maintenance">Installation & Maintenance</span>
+      <span data-en="Professional Certification"        data-fr="Certification Professionnelle">Professional Certification</span>
+    </div>
+  </div>
+
+</section>
+
+<!-- PRODUCTS WITH IMAGES -->
+<section class="container" id="our-products">
   <h2 class="section-title" data-en="Our Products" data-fr="Nos Produits">Our Products</h2>
 
   <h3 class="category-title" data-en="Solar Energy Solutions" data-fr="Solutions d'Énergie Solaire">Solar Energy Solutions</h3>
   <div class="products-grid">
     <div class="product card">
       <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" class="product-image" alt="Solar Panel">
-      <h4 data-en="Solar Panel 550W" data-fr="Panneau Solaire 550W">Solar Panel 550W</h4>
-      <p data-en="High-efficiency photovoltaic panel." data-fr="Panneau photovoltaïque haute efficacité.">High-efficiency photovoltaic panel.</p>
-      <p class="meta" data-en="Price: 250,000 XAF" data-fr="Prix : 250 000 XAF"><strong>Price:</strong> 250,000 XAF</p>
-      <button class="product-btn" data-en="Request Quote" data-fr="Demander devis">Request Quote</button>
+      <h4 data-en="Solar Panels" data-fr="Panneaux Solaires">Solar Panels</h4>
+      <p data-en="High-efficiency photovoltaic panels adapted to Chad's climate for maximum energy output."
+         data-fr="Panneaux photovoltaïques haute efficacité adaptés au climat tchadien pour une production d'énergie maximale.">
+        High-efficiency photovoltaic panels adapted to Chad's climate for maximum energy output.
+      </p>
     </div>
     <div class="product card">
       <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485" class="product-image" alt="Hybrid Inverter">
-      <h4 data-en="Hybrid Inverter 5kVA" data-fr="Onduleur Hybride 5kVA">Hybrid Inverter 5kVA</h4>
-      <p data-en="Off-grid and on-grid inverter." data-fr="Onduleur hors-réseau et sur réseau.">Off-grid and on-grid inverter.</p>
-      <p class="meta" data-en="Price: 450,000 XAF" data-fr="Prix : 450 000 XAF"><strong>Price:</strong> 450,000 XAF</p>
-      <button class="product-btn" data-en="Request Quote" data-fr="Demander devis">Request Quote</button>
+      <h4 data-en="Hybrid Inverters" data-fr="Onduleurs Hybrides">Hybrid Inverters</h4>
+      <p data-en="Off-grid and on-grid inverter systems for reliable and continuous power supply."
+         data-fr="Systèmes d'onduleurs hors-réseau et sur réseau pour une alimentation fiable et continue.">
+        Off-grid and on-grid inverter systems for reliable and continuous power supply.
+      </p>
     </div>
     <div class="product card">
-      <img src="https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b" class="product-image" alt="Solar Battery">
-      <h4 data-en="Solar Battery 200Ah" data-fr="Batterie Solaire 200Ah">Solar Battery 200Ah</h4>
-      <p data-en="Reliable energy storage solution." data-fr="Solution de stockage d'énergie fiable.">Reliable energy storage solution.</p>
-      <p class="meta" data-en="Price: 150,000 XAF" data-fr="Prix : 150 000 XAF"><strong>Price:</strong> 150,000 XAF</p>
-      <button class="product-btn" data-en="Request Quote" data-fr="Demander devis">Request Quote</button>
+      <img src="https://images.unsplash.com/photo-1593941707874-ef25b8b4a92b" class="product-image" alt="Energy Storage">
+      <h4 data-en="Energy Storage" data-fr="Stockage d'Énergie">Energy Storage</h4>
+      <p data-en="Advanced battery solutions ensuring power availability day and night."
+         data-fr="Solutions de batteries avancées garantissant la disponibilité de l'énergie jour et nuit.">
+        Advanced battery solutions ensuring power availability day and night.
+      </p>
     </div>
   </div>
 
   <h3 class="category-title" data-en="Electronic Security Systems" data-fr="Systèmes de Sécurité Électroniques">Electronic Security Systems</h3>
   <div class="products-grid">
     <div class="product card">
-      <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" class="product-image" alt="CCTV Camera">
-      <h4 data-en="CCTV Camera" data-fr="Caméra CCTV">CCTV Camera</h4>
-      <p data-en="Remote HD surveillance system." data-fr="Système de surveillance HD à distance.">Remote HD surveillance system.</p>
-      <p class="meta" data-en="Price: 85,000 XAF" data-fr="Prix : 85 000 XAF"><strong>Price:</strong> 85,000 XAF</p>
-      <button class="product-btn" data-en="Request Quote" data-fr="Demander devis">Request Quote</button>
+      <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e" class="product-image" alt="CCTV">
+      <h4 data-en="CCTV Surveillance" data-fr="Vidéosurveillance CCTV">CCTV Surveillance</h4>
+      <p data-en="HD remote surveillance systems for complete monitoring of your premises."
+         data-fr="Systèmes de surveillance HD à distance pour une surveillance complète de vos locaux.">
+        HD remote surveillance systems for complete monitoring of your premises.
+      </p>
     </div>
     <div class="product card">
       <img src="https://images.unsplash.com/photo-1580910051074-7f9d41c3d7ef" class="product-image" alt="Access Control">
       <h4 data-en="Access Control" data-fr="Contrôle d'Accès">Access Control</h4>
-      <p data-en="RFID & biometric access system." data-fr="Système d'accès RFID et biométrique.">RFID & biometric access system.</p>
-      <p class="meta" data-en="Price: 120,000 XAF" data-fr="Prix : 120 000 XAF"><strong>Price:</strong> 120,000 XAF</p>
-      <button class="product-btn" data-en="Request Quote" data-fr="Demander devis">Request Quote</button>
+      <p data-en="RFID and biometric access systems to secure and manage entry points."
+         data-fr="Systèmes d'accès RFID et biométriques pour sécuriser et gérer les points d'entrée.">
+        RFID and biometric access systems to secure and manage entry points.
+      </p>
     </div>
     <div class="product card">
       <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" class="product-image" alt="Fire Alarm">
-      <h4 data-en="Fire Alarm System" data-fr="Système d'Alarme Incendie">Fire Alarm System</h4>
-      <p data-en="Early fire detection & alerting." data-fr="Détection précoce et alerte incendie.">Early fire detection & alerting.</p>
-      <p class="meta" data-en="Price: 95,000 XAF" data-fr="Prix : 95 000 XAF"><strong>Price:</strong> 95,000 XAF</p>
-      <button class="product-btn" data-en="Request Quote" data-fr="Demander devis">Request Quote</button>
+      <h4 data-en="Fire Detection" data-fr="Détection Incendie">Fire Detection</h4>
+      <p data-en="Early fire detection and alerting systems to protect lives and property."
+         data-fr="Systèmes de détection et d'alerte incendie précoces pour protéger les vies et les biens.">
+        Early fire detection and alerting systems to protect lives and property.
+      </p>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS / TESTIMONIALS -->
+<!-- PROJECTS & TESTIMONIALS -->
 <section class="container fade-on-scroll" id="projects">
   <h2 class="section-title" data-en="Our Projects & Testimonials" data-fr="Nos Projets & Témoignages">Our Projects & Testimonials</h2>
-  
+
   <div class="projects-grid">
     <div class="project-card">
       <img src="https://images.unsplash.com/photo-1497366216548-37526070297c" alt="Office Building">
       <div class="project-info">
         <h3 data-en="Corporate Office Security" data-fr="Sécurité Bureau Corporate">Corporate Office Security</h3>
         <p data-en="Complete CCTV and access control installation for a 5-story office building in N'Djamena."
-           data-fr="Installation complète de CCTV et contrôle d'accès pour un immeuble de bureaux de 5 étages à N'Djamena.">
+           data-fr="Installation complète de CCTV et contrôle d'accès pour un immeuble de 5 étages à N'Djamena.">
           Complete CCTV and access control installation for a 5-story office building in N'Djamena.
         </p>
       </div>
     </div>
-    
     <div class="project-card">
       <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9" alt="Solar Installation">
       <div class="project-info">
@@ -231,9 +393,8 @@
         </p>
       </div>
     </div>
-    
     <div class="project-card">
-      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" alt="Commercial Building">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab" alt="Warehouse">
       <div class="project-info">
         <h3 data-en="Warehouse Security" data-fr="Sécurité Entrepôt">Warehouse Security</h3>
         <p data-en="Fire alarm and GPS tracking system for a logistics warehouse."
@@ -244,32 +405,20 @@
     </div>
   </div>
 
-  <!-- Testimonials -->
   <div class="testimonials">
     <div class="testimonial-card">
       <div class="stars">★★★★★</div>
-      <p class="testimonial-text" data-en='"Excellent service! The team was professional and the installation was flawless. Highly recommended!"'
-         data-fr='"Service excellent ! L\'équipe était professionnelle et l\'installation impeccable. Hautement recommandé !"'>
-        "Excellent service! The team was professional and the installation was flawless. Highly recommended!"
-      </p>
+      <p class="testimonial-text">"Excellent service! The team was professional and the installation was flawless. Highly recommended!"</p>
       <p class="testimonial-author">- Mohammed A., <span data-en="Business Owner" data-fr="Propriétaire d'entreprise">Business Owner</span></p>
     </div>
-    
     <div class="testimonial-card">
       <div class="stars">★★★★★</div>
-      <p class="testimonial-text" data-en='"Our solar system has been working perfectly for over a year. Great quality products and support!"'
-         data-fr='"Notre système solaire fonctionne parfaitement depuis plus d\'un an. Produits et support de grande qualité !"'>
-        "Our solar system has been working perfectly for over a year. Great quality products and support!"
-      </p>
+      <p class="testimonial-text">"Our solar system has been working perfectly for over a year. Great quality and support!"</p>
       <p class="testimonial-author">- Sarah K., <span data-en="Homeowner" data-fr="Propriétaire">Homeowner</span></p>
     </div>
-    
     <div class="testimonial-card">
       <div class="stars">★★★★★</div>
-      <p class="testimonial-text" data-en='"The security system gives us peace of mind. The 24/7 monitoring is very reliable."'
-         data-fr='"Le système de sécurité nous rassure. La surveillance 24h/24 est très fiable."'>
-        "The security system gives us peace of mind. The 24/7 monitoring is very reliable."
-      </p>
+      <p class="testimonial-text">"The security system gives us peace of mind. The 24/7 monitoring is very reliable."</p>
       <p class="testimonial-author">- Jean-Paul M., <span data-en="Property Manager" data-fr="Gestionnaire immobilier">Property Manager</span></p>
     </div>
   </div>
@@ -278,159 +427,79 @@
 <!-- FAQ -->
 <section class="container fade-on-scroll" id="faq">
   <h2 class="section-title" data-en="Frequently Asked Questions" data-fr="Questions Fréquemment Posées">Frequently Asked Questions</h2>
-  
   <div class="faq-container">
     <div class="faq-item">
       <button class="faq-question">
-        <span data-en="What is the warranty on solar panels?" data-fr="Quelle est la garantie sur les panneaux solaires ?">What is the warranty on solar panels?</span>
+        <span data-en="What is the warranty on solar installations?" data-fr="Quelle est la garantie sur les installations solaires ?">What is the warranty on solar installations?</span>
         <i class="fas fa-chevron-down"></i>
       </button>
       <div class="faq-answer">
-        <p data-en="Our solar panels come with a 25-year performance warranty and a 10-year product warranty. We also provide a 5-year installation warranty."
-           data-fr="Nos panneaux solaires sont garantis 25 ans en performance et 10 ans en produit. Nous fournissons également une garantie d'installation de 5 ans.">
-          Our solar panels come with a 25-year performance warranty and a 10-year product warranty. We also provide a 5-year installation warranty.
+        <p data-en="Our solar installations come with a 25-year performance warranty, a 10-year product warranty, and a 5-year installation warranty."
+           data-fr="Nos installations solaires sont garanties 25 ans en performance, 10 ans en produit et 5 ans pour l'installation.">
+          Our solar installations come with a 25-year performance warranty, a 10-year product warranty, and a 5-year installation warranty.
         </p>
       </div>
     </div>
-    
     <div class="faq-item">
       <button class="faq-question">
         <span data-en="How long does installation take?" data-fr="Combien de temps prend l'installation ?">How long does installation take?</span>
         <i class="fas fa-chevron-down"></i>
       </button>
       <div class="faq-answer">
-        <p data-en="Installation time varies by project size. A typical residential solar system takes 2-3 days, while security systems can be installed in 1-2 days."
-           data-fr="Le temps d'installation varie selon la taille du projet. Un système solaire résidentiel typique prend 2-3 jours, tandis que les systèmes de sécurité peuvent être installés en 1-2 jours.">
-          Installation time varies by project size. A typical residential solar system takes 2-3 days, while security systems can be installed in 1-2 days.
+        <p data-en="A typical solar system takes 2–3 days. Security systems are usually installed in 1–2 days depending on scope."
+           data-fr="Un système solaire typique prend 2-3 jours. Les systèmes de sécurité s'installent en 1-2 jours selon l'envergure.">
+          A typical solar system takes 2–3 days. Security systems are usually installed in 1–2 days depending on scope.
         </p>
       </div>
     </div>
-    
     <div class="faq-item">
       <button class="faq-question">
         <span data-en="Do you offer maintenance services?" data-fr="Offrez-vous des services de maintenance ?">Do you offer maintenance services?</span>
         <i class="fas fa-chevron-down"></i>
       </button>
       <div class="faq-answer">
-        <p data-en="Yes! We provide comprehensive maintenance packages including regular inspections, cleaning, and repairs. Our 24/7 support team is always available."
-           data-fr="Oui ! Nous proposons des forfaits de maintenance complets incluant inspections régulières, nettoyage et réparations. Notre équipe de support 24h/24 est toujours disponible.">
-          Yes! We provide comprehensive maintenance packages including regular inspections, cleaning, and repairs. Our 24/7 support team is always available.
+        <p data-en="Yes! We provide comprehensive maintenance packages including inspections, cleaning, and repairs with 24/7 support."
+           data-fr="Oui ! Nous proposons des forfaits de maintenance complets incluant inspections, nettoyage et réparations avec support 24h/24.">
+          Yes! We provide comprehensive maintenance packages including inspections, cleaning, and repairs with 24/7 support.
         </p>
       </div>
     </div>
-    
     <div class="faq-item">
       <button class="faq-question">
-        <span data-en="What payment methods do you accept?" data-fr="Quels modes de paiement acceptez-vous ?">What payment methods do you accept?</span>
+        <span data-en="Can I monitor my security system remotely?" data-fr="Puis-je surveiller mon système à distance ?">Can I monitor my security system remotely?</span>
         <i class="fas fa-chevron-down"></i>
       </button>
       <div class="faq-answer">
-        <p data-en="We accept cash, bank transfers, mobile money, and offer flexible payment plans for larger projects."
-           data-fr="Nous acceptons espèces, virements bancaires, mobile money, et proposons des plans de paiement flexibles pour les grands projets.">
-          We accept cash, bank transfers, mobile money, and offer flexible payment plans for larger projects.
+        <p data-en="Absolutely! All our security systems include mobile app access so you can monitor your property from anywhere."
+           data-fr="Absolument ! Tous nos systèmes incluent un accès via application mobile pour surveiller votre propriété de n'importe où.">
+          Absolutely! All our security systems include mobile app access so you can monitor your property from anywhere.
         </p>
       </div>
     </div>
-    
     <div class="faq-item">
       <button class="faq-question">
-        <span data-en="Can I monitor my security system remotely?" data-fr="Puis-je surveiller mon système de sécurité à distance ?">Can I monitor my security system remotely?</span>
+        <span data-en="What areas do you serve?" data-fr="Quelles zones desservez-vous ?">What areas do you serve?</span>
         <i class="fas fa-chevron-down"></i>
       </button>
       <div class="faq-answer">
-        <p data-en="Absolutely! All our security systems come with mobile app access, allowing you to monitor your property from anywhere in the world."
-           data-fr="Absolument ! Tous nos systèmes de sécurité incluent un accès via application mobile, vous permettant de surveiller votre propriété de n'importe où dans le monde.">
-          Absolutely! All our security systems come with mobile app access, allowing you to monitor your property from anywhere in the world.
+        <p data-en="We are based in N'Djamena and serve clients across Chad. Contact us to discuss your project."
+           data-fr="Nous sommes basés à N'Djamena et servons des clients à travers tout le Tchad. Contactez-nous pour discuter de votre projet.">
+          We are based in N'Djamena and serve clients across Chad. Contact us to discuss your project.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT FORM -->
-<section class="container fade-on-scroll" id="contact">
-  <h2 class="section-title" data-en="Contact Us" data-fr="Contactez-Nous">Contact Us</h2>
-  
-  <div class="contact-wrapper">
-    <div class="contact-info">
-      <h3 data-en="Get in Touch" data-fr="Prenez Contact">Get in Touch</h3>
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <div>
-          <strong data-en="Address" data-fr="Adresse">Address</strong>
-          <p>N'Djamena, Chad</p>
-        </div>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <div>
-          <strong data-en="Phone" data-fr="Téléphone">Phone</strong>
-          <p><a href="tel:+23568376110">+235 68 37 61 10</a></p>
-        </div>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-envelope"></i>
-        <div>
-          <strong>Email</strong>
-          <p><a href="mailto:isetintegrationsa@gmail.com">isetintegrationsa@gmail.com</a></p>
-        </div>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-clock"></i>
-        <div>
-          <strong data-en="Business Hours" data-fr="Horaires">Business Hours</strong>
-          <p data-en="Monday - Saturday: 8:00 AM - 6:00 PM" data-fr="Lundi - Samedi : 8h00 - 18h00">Monday - Saturday: 8:00 AM - 6:00 PM</p>
-        </div>
-      </div>
-    </div>
-    
-    <form class="contact-form" id="contactForm">
-      <div class="form-group">
-        <input type="text" id="name" required>
-        <label for="name" data-en="Full Name *" data-fr="Nom Complet *">Full Name *</label>
-      </div>
-      
-      <div class="form-group">
-        <input type="email" id="email" required>
-        <label for="email">Email *</label>
-      </div>
-      
-      <div class="form-group">
-        <input type="tel" id="phone">
-        <label for="phone" data-en="Phone Number" data-fr="Numéro de Téléphone">Phone Number</label>
-      </div>
-      
-      <div class="form-group">
-        <select id="service" required>
-          <option value="" data-en="Select a service *" data-fr="Sélectionner un service *">Select a service *</option>
-          <option value="solar" data-en="Solar Energy" data-fr="Énergie Solaire">Solar Energy</option>
-          <option value="cctv" data-en="CCTV Systems" data-fr="Systèmes CCTV">CCTV Systems</option>
-          <option value="access" data-en="Access Control" data-fr="Contrôle d'Accès">Access Control</option>
-          <option value="fire" data-en="Fire Alarm" data-fr="Alarme Incendie">Fire Alarm</option>
-          <option value="other" data-en="Other" data-fr="Autre">Other</option>
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <textarea id="message" rows="5" required></textarea>
-        <label for="message" data-en="Your Message *" data-fr="Votre Message *">Your Message *</label>
-      </div>
-      
-      <button type="submit" class="submit-btn" data-en="Send Message" data-fr="Envoyer le Message">Send Message</button>
-      <p class="form-status" id="formStatus"></p>
-    </form>
-  </div>
-</section>
-
-<!-- Employees Section -->
-<section class="container" id="employees">
+<!-- TEAM -->
+<section class="container fade-on-scroll" id="employees">
   <h2 class="section-title" data-en="Our Team" data-fr="Notre Équipe">Our Team</h2>
   <div class="employees-grid">
     <div class="card employee">
       <div class="avatar">I</div>
       <div class="employee-info">
         <h3 data-en="Technical Engineering Team" data-fr="Équipe Technique d'Ingénierie">Technical Engineering Team</h3>
-        <p data-en="Role: Solar & Electronic Security Engineers" data-fr="Rôle : Ingénieurs Solaire & Sécurité Électronique"><strong>Role:</strong> Solar & Electronic Security Engineers</p>
+        <p><strong>Role:</strong> <span data-en="Solar & Electronic Security Engineers" data-fr="Ingénieurs Solaire & Sécurité Électronique">Solar & Electronic Security Engineers</span></p>
         <p class="muted"><a href="mailto:isetintegrationsa@gmail.com">isetintegrationsa@gmail.com</a></p>
         <p class="muted"><a href="tel:+23568376110">+235 68 37 61 10</a></p>
       </div>
@@ -439,7 +508,7 @@
       <div class="avatar">T</div>
       <div class="employee-info">
         <h3 data-en="Installation & Support Team" data-fr="Équipe Installation & Support">Installation & Support Team</h3>
-        <p data-en="Role: Certified Technicians" data-fr="Rôle : Techniciens Certifiés"><strong>Role:</strong> Certified Technicians</p>
+        <p><strong>Role:</strong> <span data-en="Certified Technicians" data-fr="Techniciens Certifiés">Certified Technicians</span></p>
         <p class="muted"><a href="mailto:support@isetintegration.com">support@isetintegration.com</a></p>
         <p class="muted"><a href="tel:+23568376110">+235 68 37 61 10</a></p>
       </div>
@@ -449,7 +518,7 @@
 
 </main>
 
-<!-- Floating Action Buttons -->
+<!-- Floating Buttons -->
 <div class="floating-btns">
   <a href="https://wa.me/23568376110" class="float-btn whatsapp" target="_blank" aria-label="WhatsApp">
     <i class="fab fa-whatsapp"></i>
@@ -459,7 +528,6 @@
   </a>
 </div>
 
-<!-- Scroll to Top Button -->
 <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
   <i class="fas fa-arrow-up"></i>
 </button>
@@ -471,18 +539,14 @@
   </div>
 </footer>
 
-<!-- ================= JS ================= -->
 <script>
-// Menu Toggle
 const menuToggle = document.getElementById('menu-toggle');
-const mainNav = document.getElementById('mainNav');
+const mainNav    = document.getElementById('mainNav');
 
 menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
   mainNav.classList.toggle('active');
 });
-
-// Close menu when clicking on a link
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     menuToggle.classList.remove('active');
@@ -490,112 +554,62 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
-// Intersection Observer for fade-in animations
+// Fade on scroll
 const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (e.isIntersecting) e.target.classList.add('visible');
-  });
-}, { threshold: 0.2 });
-
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.15 });
 document.querySelectorAll('.fade-on-scroll').forEach(el => observer.observe(el));
 
-// FAQ Accordion
-document.querySelectorAll('.faq-question').forEach(button => {
-  button.addEventListener('click', () => {
-    const faqItem = button.parentElement;
-    const isActive = faqItem.classList.contains('active');
-    
-    // Close all FAQs
-    document.querySelectorAll('.faq-item').forEach(item => {
-      item.classList.remove('active');
-    });
-    
-    // Open clicked FAQ if it wasn't active
-    if (!isActive) {
-      faqItem.classList.add('active');
-    }
+// FAQ
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isActive = item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+    if (!isActive) item.classList.add('active');
   });
 });
 
 // Contact Form
-document.getElementById('contactForm').addEventListener('submit', async (e) => {
+document.getElementById('contactForm').addEventListener('submit', e => {
   e.preventDefault();
-  
-  const formStatus = document.getElementById('formStatus');
+  const status    = document.getElementById('formStatus');
   const submitBtn = e.target.querySelector('.submit-btn');
-  
-  // Get form values
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  const service = document.getElementById('service').value;
-  const message = document.getElementById('message').value;
-  
-  // Disable button
-  submitBtn.disabled = true;
-  submitBtn.textContent = 'Sending...';
-  
-  // Simulate form submission (replace with your actual endpoint)
+  submitBtn.disabled    = true;
+  submitBtn.textContent = 'Sending…';
   setTimeout(() => {
-    formStatus.textContent = 'Message sent successfully! We will contact you soon.';
-    formStatus.style.color = '#00a854';
-    e.target.reset();
-    
-    submitBtn.disabled = false;
+    status.textContent    = '✅ Message sent! We will contact you soon.';
+    status.style.color    = '#00a854';
+    submitBtn.disabled    = false;
     submitBtn.textContent = 'Send Message';
-    
-    // Clear status after 5 seconds
-    setTimeout(() => {
-      formStatus.textContent = '';
-    }, 5000);
+    e.target.reset();
+    setTimeout(() => { status.textContent = ''; }, 5000);
   }, 1500);
-});
-
-// Product buttons
-document.querySelectorAll('.product-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-  });
 });
 
 // Scroll to Top
 const scrollTopBtn = document.getElementById('scrollTop');
-
 window.addEventListener('scroll', () => {
-  if (window.pageYOffset > 300) {
-    scrollTopBtn.classList.add('visible');
-  } else {
-    scrollTopBtn.classList.remove('visible');
-  }
+  scrollTopBtn.classList.toggle('visible', window.pageYOffset > 300);
 });
+scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-scrollTopBtn.addEventListener('click', () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
-
-// Multilingual Logic
+// Multilingual
 function setLanguage(lang) {
-  localStorage.setItem("language", lang);
+  localStorage.setItem('language', lang);
   applyLanguage(lang);
 }
-
 function applyLanguage(lang) {
   document.documentElement.lang = lang;
-  document.querySelectorAll("[data-en]").forEach(el => {
-    const text = el.getAttribute("data-" + lang);
-    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
-      el.placeholder = text;
-    } else if (el.tagName === 'OPTION') {
-      el.textContent = text;
-    } else {
-      el.textContent = text;
-    }
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const text = el.getAttribute('data-' + lang);
+    if (!text) return;
+    if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') el.placeholder = text;
+    else el.textContent = text;
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("language") || "en";
-  applyLanguage(savedLang);
+document.addEventListener('DOMContentLoaded', () => {
+  applyLanguage(localStorage.getItem('language') || 'en');
 });
 </script>
 
